@@ -21,6 +21,8 @@
 		A4BA7CA827E45EEA00212EC2 /* PlayingFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA7CA727E45EEA00212EC2 /* PlayingFriendView.swift */; };
 		A4BA7CAA27E4608B00212EC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4BA7CA927E4608B00212EC2 /* GoogleService-Info.plist */; };
 		A4BA7CAD27E4629F00212EC2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A4BA7CAC27E4629F00212EC2 /* FirebaseFirestore */; };
+		A4BA7CAF27E4722300212EC2 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA7CAE27E4722200212EC2 /* Welcome.swift */; };
+		A4BA7CB127E4761D00212EC2 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA7CB027E4761D00212EC2 /* OnBoarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		A4BA7CA527E45ECE00212EC2 /* FriendMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendMatchView.swift; sourceTree = "<group>"; };
 		A4BA7CA727E45EEA00212EC2 /* PlayingFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFriendView.swift; sourceTree = "<group>"; };
 		A4BA7CA927E4608B00212EC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4BA7CAE27E4722200212EC2 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		A4BA7CB027E4761D00212EC2 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				A4BA7C9627E45D8200212EC2 /* View */,
 				A4BA7C8827E45B9400212EC2 /* PickUpApp.swift */,
+				A4BA7CAE27E4722200212EC2 /* Welcome.swift */,
+				A4BA7CB027E4761D00212EC2 /* OnBoarding.swift */,
 				A4BA7C8A27E45B9400212EC2 /* ContentView.swift */,
 				A4BA7CA927E4608B00212EC2 /* GoogleService-Info.plist */,
 				A4BA7C8C27E45B9700212EC2 /* Assets.xcassets */,
@@ -198,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4BA7C9D27E45E3400212EC2 /* LeaderboardView.swift in Sources */,
+				A4BA7CAF27E4722300212EC2 /* Welcome.swift in Sources */,
 				A4BA7C9A27E45E0200212EC2 /* SignupView.swift in Sources */,
 				A4BA7CA427E45EAB00212EC2 /* FindingOpponent.swift in Sources */,
 				A4BA7C9F27E45E5100212EC2 /* TabNavigationView.swift in Sources */,
@@ -206,6 +213,7 @@
 				A4BA7C9827E45DE700212EC2 /* LoginView.swift in Sources */,
 				A4BA7CA127E45E7500212EC2 /* UserTabView.swift in Sources */,
 				A4BA7C8B27E45B9400212EC2 /* ContentView.swift in Sources */,
+				A4BA7CB127E4761D00212EC2 /* OnBoarding.swift in Sources */,
 				A4BA7C8927E45B9400212EC2 /* PickUpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,53 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var showLogin = false
-    @State var showSign = false
+    @State var shouldShowOnBoarding: Bool = true
     
     var body: some View {
-        
-        ZStack {
-                Color(red: 158 / 255, green: 3 / 255, blue: 29 / 255).edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Image("player")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 400, alignment: .center)
-                    .padding(.top, 100)
-                
-                Button(action: { showLogin = true }) {
-                    Text("Login")
-                }
-                .font(.system(size: 40))
-                .padding()
-                .frame(width: 200, height: 50)
-                .background(Color.green)
-                .cornerRadius(15)
-                .foregroundColor(Color.white)
-                .frame(maxHeight: .infinity, alignment: .bottom)
-                .padding(.bottom, 10)
-                
-                .fullScreenCover(isPresented: $showLogin) {
-                    LoginView()
-                }
-                
-                Button(action: { showSign = true }) {
-                    Text("Sign Up")
-                }
-                .font(.system(size: 40))
-                .padding()
-                .frame(width: 200, height: 50)
-                .background(Color.blue)
-                .cornerRadius(15)
-                .foregroundColor(Color.white)
-                .padding(.bottom, 125)
-                
-                .fullScreenCover(isPresented: $showSign) {
-                    SignupView()
-                }
-                
+        NavigationView{
+            VStack{
+                Text("You are in the main app")
             }
+        }
+        .fullScreenCover(isPresented: $shouldShowOnBoarding) {
+            Welcome()
         }
     }
 }

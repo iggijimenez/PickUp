@@ -19,6 +19,8 @@
 		A4BA7CA427E45EAB00212EC2 /* FindingOpponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA7CA327E45EAB00212EC2 /* FindingOpponent.swift */; };
 		A4BA7CA627E45ECE00212EC2 /* FriendMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA7CA527E45ECE00212EC2 /* FriendMatchView.swift */; };
 		A4BA7CA827E45EEA00212EC2 /* PlayingFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA7CA727E45EEA00212EC2 /* PlayingFriendView.swift */; };
+		A4BA7CAA27E4608B00212EC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4BA7CA927E4608B00212EC2 /* GoogleService-Info.plist */; };
+		A4BA7CAD27E4629F00212EC2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A4BA7CAC27E4629F00212EC2 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,7 @@
 		A4BA7CA327E45EAB00212EC2 /* FindingOpponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingOpponent.swift; sourceTree = "<group>"; };
 		A4BA7CA527E45ECE00212EC2 /* FriendMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendMatchView.swift; sourceTree = "<group>"; };
 		A4BA7CA727E45EEA00212EC2 /* PlayingFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFriendView.swift; sourceTree = "<group>"; };
+		A4BA7CA927E4608B00212EC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BA7CAD27E4629F00212EC2 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +74,7 @@
 				A4BA7C9627E45D8200212EC2 /* View */,
 				A4BA7C8827E45B9400212EC2 /* PickUpApp.swift */,
 				A4BA7C8A27E45B9400212EC2 /* ContentView.swift */,
+				A4BA7CA927E4608B00212EC2 /* GoogleService-Info.plist */,
 				A4BA7C8C27E45B9700212EC2 /* Assets.xcassets */,
 				A4BA7C8E27E45B9700212EC2 /* Preview Content */,
 			);
@@ -131,6 +136,9 @@
 			dependencies = (
 			);
 			name = PickUp;
+			packageProductDependencies = (
+				A4BA7CAC27E4629F00212EC2 /* FirebaseFirestore */,
+			);
 			productName = PickUp;
 			productReference = A4BA7C8527E45B9400212EC2 /* PickUp.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +167,9 @@
 				Base,
 			);
 			mainGroup = A4BA7C7C27E45B9400212EC2;
+			packageReferences = (
+				A4BA7CAB27E4629F00212EC2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A4BA7C8627E45B9400212EC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -175,6 +186,7 @@
 			files = (
 				A4BA7C9027E45B9700212EC2 /* Preview Assets.xcassets in Resources */,
 				A4BA7C8D27E45B9700212EC2 /* Assets.xcassets in Resources */,
+				A4BA7CAA27E4608B00212EC2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +409,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4BA7CAB27E4629F00212EC2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4BA7CAC27E4629F00212EC2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4BA7CAB27E4629F00212EC2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4BA7C7D27E45B9400212EC2 /* Project object */;
 }

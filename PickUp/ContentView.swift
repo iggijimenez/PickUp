@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("___shouldShowOnBoarding") var shouldShowOnBoarding: Bool = true
+    @AppStorage("_______shouldShowOnBoarding") var shouldShowOnBoarding: Bool = true
     
     var body: some View {
         NavigationView{

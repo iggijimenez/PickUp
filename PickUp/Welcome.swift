@@ -22,7 +22,7 @@ struct Welcome: View {
                          shouldShowOnBoarding: $shouldShowOnBoarding)
                 
                 PageView(title: "Introduction",
-                         subtitle: "We are giving you a Unique ID. The Unique ID lets other players find you. Below please Input a name for yourself",
+                         subtitle: "Please Insert a Username",
                          imageName: "onboard2",
                          showsDismissButton: false,
                          showsTextfieldButton: true,
@@ -77,12 +77,23 @@ struct PageView: View {
                     .padding(10)
                     .background(Color.secondary)
                     .padding()
+                
+                Button {
+                    model.addData(name: name, points: 0)
+                } label: {
+                    Text("Submit")
+                        .bold()
+                        .foregroundColor(Color.white)
+                        .frame(width: 200, height: 50)
+                        .background(Color.green)
+                        .cornerRadius(15)
+                        .padding(.bottom, 100)
+                }
             }
             
             if showsDismissButton {
                 Button {
                     shouldShowOnBoarding.toggle()
-                    model.addData(name: name, points: 0)
                 } label: {
                     Text("Get Started")
                         .bold()

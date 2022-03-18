@@ -11,11 +11,15 @@ struct LeaderboardView: View {
     @ObservedObject var model = UserViewModel()
     
     var body: some View {
-        VStack{
-            ForEach((model.list)) { item in
-                HStack{
-                    Text(item.name)
-                    Text("\(item.points)")
+        ZStack{
+            Color(red: 158 / 255, green: 3 / 255, blue: 29 / 255).edgesIgnoringSafeArea(.all)
+            VStack{
+                List(model.list) { item in
+                    HStack{
+                        Text(item.name)
+                        Spacer()
+                        Text("\(item.points)")
+                    }
                 }
             }
         }

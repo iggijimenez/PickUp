@@ -31,11 +31,6 @@ struct UserTabView: View {
                     }
                     .padding(.top, 25)
                     
-                    Text("Rank")
-                        .font(.title)
-                        .fontWeight(.heavy)
-                        .foregroundColor(Color.white)
-                    
                     Button(action: { showFriend = true }) {
                         Text("Play Friend")
                     }

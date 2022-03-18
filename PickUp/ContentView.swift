@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var shouldShowOnBoarding: Bool = true
+    @AppStorage("shouldShowOnBoarding") var shouldShowOnBoarding: Bool = true
     
     var body: some View {
         NavigationView{
             VStack{
-                Text("You are in the main app")
+                TabNavigationView()
             }
         }
         .fullScreenCover(isPresented: $shouldShowOnBoarding) {
-            Welcome()
+            Welcome(shouldShowOnBoarding: $shouldShowOnBoarding)
         }
     }
 }

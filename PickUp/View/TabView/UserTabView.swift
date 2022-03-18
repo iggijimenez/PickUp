@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct UserTabView: View {
-    @State var showOpp = false
     @State var showFriend = false
+    @State var showAccount = false
     
     var body: some View {
         
@@ -35,26 +35,6 @@ struct UserTabView: View {
                         .font(.title)
                         .fontWeight(.heavy)
                         .foregroundColor(Color.white)
-                    Text("#1")
-                        .font(.title)
-                        .fontWeight(.heavy)
-                        .foregroundColor(Color.white)
-                    
-                    
-                    Button(action: { showOpp = true }) {
-                        Text("Find Opponent")
-                    }
-                    .font(.system(size: 25))
-                    .padding()
-                    .frame(width: 200, height: 50)
-                    .background(Color.green)
-                    .cornerRadius(15)
-                    .foregroundColor(Color.white)
-                    .frame(maxHeight: .infinity, alignment: .bottom)
-                    
-                    .fullScreenCover(isPresented: $showOpp) {
-                        FindingOpponent()
-                    }
                     
                     Button(action: { showFriend = true }) {
                         Text("Play Friend")
@@ -74,7 +54,16 @@ struct UserTabView: View {
 
                     
                 }
-                .navigationBarTitle("Your Profile").foregroundColor(.orange)
+                .navigationBarTitle("Your Profile")
+                .toolbar {
+                    Button(action: { showAccount = true }) {
+                        Text("Account")
+                    }
+                    
+                    .sheet(isPresented: $showAccount) {
+                        Account()
+                    }
+                }
                 
             }
         }

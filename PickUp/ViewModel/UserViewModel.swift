@@ -12,6 +12,23 @@ class UserViewModel: ObservableObject {
     
     @Published var list = [User]()
     
+    func addData(name: String, points: Int) {
+        
+        let db = Firestore.firestore()
+        
+        //add the document
+        db.collection("users").addDocument(data: ["name":name, "points":points]) { error in
+            
+            if error == nil {
+                
+            } else {
+                self.getData()
+            }
+        }
+        
+        
+    }
+    
     func getData() {
         
         //Get a reference
@@ -33,7 +50,9 @@ class UserViewModel: ObservableObject {
                             return User(id: d.documentID,
                                         name: d["name"] as? String ?? "",
                                         points: d["points"] as? Int ?? 0)
-                        }
+                            
+                        }.sorted(by: { $0.points > $1.points })
+                        
                     }
                     
                 }

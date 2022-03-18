@@ -22,6 +22,7 @@ struct TabNavigationView: View {
                     Text("Leaderboard")
                 }
         }
+        
     }
 }
 

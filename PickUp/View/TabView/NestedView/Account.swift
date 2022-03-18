@@ -1,14 +1,16 @@
 //
-//  LeaderboardView.swift
-//  BallUp
+//  Account.swift
+//  PickUp
 //
-//  Created by jimenez on 3/16/22.
+//  Created by jimenez on 3/18/22.
 //
 
 import SwiftUI
 
-struct LeaderboardView: View {
+struct Account: View {
     @ObservedObject var model = UserViewModel()
+    
+    var usersavedName = UserDefaults.standard.string(forKey: "UserName") ?? ""
     
     var body: some View {
         VStack{
@@ -19,16 +21,16 @@ struct LeaderboardView: View {
                 }
             }
         }
-        
     }
     
     init() {
         model.getData()
     }
+    
 }
 
-struct LeaderboardView_Previews: PreviewProvider {
+struct Account_Previews: PreviewProvider {
     static var previews: some View {
-        LeaderboardView()
+        Account()
     }
 }

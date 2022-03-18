@@ -22,6 +22,7 @@
 		A4BA7CAF27E4722300212EC2 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA7CAE27E4722200212EC2 /* Welcome.swift */; };
 		A4BA7CB527E4DEB800212EC2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA7CB427E4DEB700212EC2 /* User.swift */; };
 		A4BA7CB727E4DF8B00212EC2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA7CB627E4DF8B00212EC2 /* UserViewModel.swift */; };
+		A4BA7CB927E4EB0900212EC2 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA7CB827E4EB0800212EC2 /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A4BA7CAE27E4722200212EC2 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		A4BA7CB427E4DEB700212EC2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A4BA7CB627E4DF8B00212EC2 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		A4BA7CB827E4EB0800212EC2 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				A4BA7CA327E45EAB00212EC2 /* FindingOpponent.swift */,
 				A4BA7CA527E45ECE00212EC2 /* FriendMatchView.swift */,
 				A4BA7CA727E45EEA00212EC2 /* PlayingFriendView.swift */,
+				A4BA7CB827E4EB0800212EC2 /* Account.swift */,
 			);
 			path = NestedView;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				A4BA7CA427E45EAB00212EC2 /* FindingOpponent.swift in Sources */,
 				A4BA7C9F27E45E5100212EC2 /* TabNavigationView.swift in Sources */,
 				A4BA7CA627E45ECE00212EC2 /* FriendMatchView.swift in Sources */,
+				A4BA7CB927E4EB0900212EC2 /* Account.swift in Sources */,
 				A4BA7CA827E45EEA00212EC2 /* PlayingFriendView.swift in Sources */,
 				A4BA7CB527E4DEB800212EC2 /* User.swift in Sources */,
 				A4BA7CB727E4DF8B00212EC2 /* UserViewModel.swift in Sources */,

@@ -11,6 +11,8 @@ struct FriendMatchView: View {
     @State var playedUserScore: String = ""
     @State var userScore: String = ""
     @State var donePlayed: Bool = false
+    @State var name = ""
+    @State var points = 0
     
     var body: some View {
         NavigationView {
@@ -19,30 +21,10 @@ struct FriendMatchView: View {
             
             Color(red: 0 / 255, green: 0 / 255, blue: 0 / 255).edgesIgnoringSafeArea(.all)
             VStack{
-                Text("You played ----")
+                Text("Select the person who Won")
                     .foregroundColor(Color.orange)
                 HStack {
-                    Text("Your Score")
-                        .foregroundColor(Color.orange)
-                        .font(.title)
-                    Text("")
-                    TextField("", text: $userScore)
-                        .keyboardType(.decimalPad)
-                        .frame(width: 50, height: 50, alignment: .center)
-                        .background(Color.gray)
-                        .foregroundColor(Color.red)
-                }
-                
-                HStack {
-                    Text("Their Score")
-                        .foregroundColor(Color.orange)
-                        .font(.title)
-                    Text("")
-                    TextField("", text: $playedUserScore)
-                        .keyboardType(.decimalPad)
-                        .frame(width: 50, height: 50, alignment: .center)
-                        .background(Color.gray)
-                        .foregroundColor(Color.red)
+                    Text(name)
                 }
                 
                 Button(action: { donePlayed = true }) {
